@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: teal;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 80%;
+  background-image: url(craft.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: TEAL;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>KAPILVARMA BOMMAGANI</h1>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="file:///C:/Users/kapil/Desktop/resume.html">HOME</a>
+  <a href="file:///C:/Users/kapil/Desktop/certifications.html">CERTIFICATIONS</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <div> <img width="80px" height="80px" src="suitepic.jpg" alt="kapilpic"></div>
+    <h3>CONTACT</h3>
+
+
+    <div> <p>
+    Contact Mail:
+    <a href="mailto:kapilvarma.ae@gmail.com" target="_top" style="height:60px;">kapilvarma.ae@gmail.com</a>
+    </p> </div><br>
+
+    <div> <p>
+    Contact Mobile:<br>
+    <a href="tel:+9041855338" style="height:60px;">CALL KAPIL</a>
+    </p> </div>
+  </div>
+
+  <div class="main">
+    <h2>EDUCATION</h2>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    <table style="width:100%">
+      <tr>
+        <th>University/college</th>
+        <th>Degree</th>
+        <th>Date Completed</th>
+      </tr>
+      <tr>
+        <td>Lovely Professional University</td>
+        <td>B.TECH(ECE)-MBA</td>
+        <td>2019</td>
+      </tr>
+      <tr>
+        <td>Narayana Junior College</td>
+        <td>MPC</td>
+        <td>2014</td>
+      </tr>
+      <tr>
+        <td>Gowtham Model School</td>
+        <td>Secondary Education</td>
+        <td>2012</td>
+      </tr>
+    </table>
+    <br>
+    <h2>INTERNSHIP</h2>
+    <dl>
+      <dt>DATA ANALYST INTERN(S&D), BHARATI AIRTEL (MAY 2018 – JULY 2018)</dt>
+      <dd>- Clean,organise,store and analysis operation's on large data sets.Final output is to analyse the consumer insights data, sales pattern, predict the possibility of network change etc. We have analysed data through forecasting & regression analysis techniques (r-studio and tableau are used for analysis and reporting).</dd>
+    </dl>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <ul style="list-style-type:disc;">
+      <li>Programming</li>
+      <ul>
+         <li>R Programming</li>
+         <li>Python 3</li>
+         <li>Mat Lab</li>
+      </ul>
+      <li>Visualization Software's</li>
+      <ul>
+         <li>Tableau</li>
+         <li>Microsoft Excel Specialist Certified (OFFICE 365)</li>
+      </ul>
+    </ul>
+    <br>
+    <h2>TABLEAU PROJECTS</h2>
+    <style>
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    </style>
+
+    <div class="gallery">
+
+      <a href="images/bubble.PNG" target="_blank"><img width="300px" height="300px" src="images/bubble.PNG" ></a>
+
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://public.tableau.com/views/part2_15851233394290/Sheet1?:display_count=y&:origin=viz_share_link">
+        <img src="bubble.png" alt="bubble" width="600" height="400">
+      </a>
+      <div class="desc">bubble</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://public.tableau.com/views/shipmentdetails/Sheet1?:retry=yes&:display_count=y&:origin=viz_share_link">
+        <img src="linedgraph.png" alt="linedgraph" width="600" height="400">
+      </a>
+      <div class="desc">linedgraph</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://public.tableau.com/views/kapilvarmascatterplot/Sheet1?:display_count=y&:origin=viz_share_link">
+        <img src="scatterplot.png" alt="scatterplot" width="600" height="400">
+      </a>
+      <div class="desc">scatterplot</div>
+    </div>
+
+    <div class="gallery">
+      <a target="_blank" href="https://public.tableau.com/views/tablespotlight/Sheet1?:display_count=y&publish=yes&:origin=viz_share_link">
+        <img src="tablespotlight.png" alt="tablespotlight" width="600" height="400">
+      </a>
+      <div class="desc">tablespotlight</div>
+    </div>
+    <br>
+  </div>
+
+  <div>
+    <h2>PROJECTS</h2>
+    <dl>
+      <dt>RESEARCH PAPER:</dt>
+      <dd>- The Research objective was to find “consumer behaviour purchase patterns”. A market research of 535
+
+    people from different categories has been recorded through google forms and questionnaire. Different
+
+    scaling methods has been used in the questionnaire. After the collection of data they are analysed in SPSS
+
+    software to find Anova, regression analysis, cumulative frequency, r square, standard error, significance.
+
+    For data visualization R-studio has been used.
+    </dd>
+    </dl>
+
+    <dl>
+      <dt>MACHINE LEARNING:</dt>
+      <dd>- 1)	The algorithm was trained to recommend products to the customer based on previous purchase patterns. In this project previous transaction of customer have been taken and trained to the algorithm. Apriori algorithm was used for classification of transaction history.<br/>
+
+       2)The machine learning algorithm was trained to identify different types of aeroplanes. when a input of aeroplane model is given it gives details of manufacturer, model number, capacity of aeroplane, speed etc.
+
+    </dd>
+    </dl>
+
+    <dl>
+      <dt>SENTIMENT ANALYSIS:</dt>
+      <dd>- Worked in R -studio environment to find perception of people about a topic (statue of unity, rafale deal), how they are reacting in different social media platforms. The project application in business world is how customers are reacting to the product and service. Based on sentiment analysis, branding and advertisements related to the products can be modified.</dd>
+    </dl>
+
+    <dl>
+      <dt>DIGITAL CAMPAIGN:</dt>
+      <dd>- The best part of this campaign is our site was topped in google search (organic results). Created a website named (resfebersecrets). We have run this campaign for 25-days, the out-reach of this website across all social media and organic search is 18112 without a single penny investment.</dd>
+    </dl>
+  </div>
+  <br>
+    <h2>ACTIVITES</h2>
+    <ul style="list-style-type:disc;">
+      <li>Event Manager for Google conference in Lovely Professional University</li>
+      <li>Elected as head boy of the school in 10th class</li>
+      <li>Intra University quiz competition-third prize (2016)</li>
+      <li>Awarded 1st Prize in chess competition in 10th standard</li>
+    </ul>
+
+</div>
+<!-- Footer -->
+<div class="footer">
+</div>
+
+</body>
+</html>
